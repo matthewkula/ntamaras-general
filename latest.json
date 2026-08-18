@@ -1,8 +1,8 @@
 {
-  "version": "1.2.0",
+  "version": "1.2.1",
   "url": "https://github.com/matthewkula/ntamaras-general/releases/latest",
-  "notes": "Step thumbnails, click-to-reteach a broken step, a guided setup after recording, optional parallel runs, and a download 111 MB smaller.",
+  "notes": "Fixes a crash on startup that closed the app immediately on some machines, and adds a log file so a bad launch leaves something to read.",
   "released": "2026-08-18",
-  "sha256": "929DD75723282C7DA0373718408854D90E12CB07D6A74C3F33768D5FDA518772",
+  "sha256": "063F76DB6F24C864929573ECE07FBA60617EC5855C02CEE738C96A1B51B86831",
   "minimum_os": "Windows 10"
 }

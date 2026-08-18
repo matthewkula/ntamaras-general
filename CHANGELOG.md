@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.2.1 — 18 August 2026
+
+**Fixes a crash on startup.** Version 1.2.0 closed immediately on some machines with
+`Unable to configure formatter 'default'` instead of opening. The app ships without a
+console window, which left it with nowhere to write its startup messages, and the web
+server refused to start rather than write nowhere. It now writes them to a file instead.
+
+**There is now a log to look at when something goes wrong.** Anything the app would have
+printed goes to `%LOCALAPPDATA%\NtamarasGeneral\logs\app.log`. If the app ever misbehaves,
+that file is the first place to look, and the first thing to send me.
+
 ## 1.2.0 — 18 August 2026
 
 **Every step now shows a picture of the control it touches.** A step used to read
