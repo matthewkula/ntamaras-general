@@ -1,0 +1,8 @@
+{
+  "version": "1.2.0",
+  "url": "https://github.com/matthewkula/ntamaras-general/releases/latest",
+  "notes": "Step thumbnails, click-to-reteach a broken step, a guided setup after recording, optional parallel runs, and a download 111 MB smaller.",
+  "released": "2026-08-18",
+  "sha256": "929DD75723282C7DA0373718408854D90E12CB07D6A74C3F33768D5FDA518772",
+  "minimum_os": "Windows 10"
+}
