@@ -1,8 +1,8 @@
 {
-  "version": "1.2.1",
+  "version": "1.2.2",
   "url": "https://github.com/matthewkula/ntamaras-general/releases/latest",
-  "notes": "Fixes a crash on startup that closed the app immediately on some machines, and adds a log file so a bad launch leaves something to read.",
-  "released": "2026-08-18",
-  "sha256": "063F76DB6F24C864929573ECE07FBA60617EC5855C02CEE738C96A1B51B86831",
+  "notes": "Repeating no longer needs a spreadsheet: run a set number of times, until something shows up on screen, or until a step runs out of anywhere to go. Flows can now run themselves on a Windows Task Scheduler timer, and can tell a Zapier/Make/n8n webhook when they finish.",
+  "released": "2026-08-19",
+  "sha256": "2F5C6E5E83A5820E8D324C7E81F9CA82B1AA403032836BA1830FC2DB39B5E9ED",
   "minimum_os": "Windows 10"
 }

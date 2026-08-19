@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.2.2 — 19 August 2026
+
+**Repeating no longer needs a spreadsheet.** Right after recording, you now get a
+straight choice: once per row of data, a fixed number of times, until something shows
+up on screen, or until a step runs out of anywhere to go — the last one is built for
+working through a feed or a list from a starting point to the end, since scrolling to
+the next post failing on the last post is the natural stopping point. All four used to
+be reachable only from deep in the editor; now they are the second question after a
+recording, same as the data step used to be.
+
+**Flows can now run themselves.** A new Automate tab lets Windows Task Scheduler run a
+flow on its own — daily, weekly, hourly, or every few minutes — with no window open.
+
+**And tell other tools when one finishes.** Also on the Automate tab: point a flow at a
+Zapier, Make, or n8n webhook, and a summary posts there the moment the run ends.
+
 ## 1.2.1 — 18 August 2026
 
 **Fixes a crash on startup.** Version 1.2.0 closed immediately on some machines with
