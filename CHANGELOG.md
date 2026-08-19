@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.3 — 19 August 2026
+
+**The recording window now comes to you.** It used to be easy to miss which window was
+actually being recorded, especially with other browser windows already open — clicking
+around in the wrong one looked like nothing was happening, because nothing was. The
+recorder's own window now jumps to the front and maximises itself the moment it opens,
+so there is no mistaking it for anything else.
+
 ## 1.2.2 — 19 August 2026
 
 **Repeating no longer needs a spreadsheet.** Right after recording, you now get a

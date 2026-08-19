@@ -1,8 +1,8 @@
 {
-  "version": "1.2.2",
+  "version": "1.2.3",
   "url": "https://github.com/matthewkula/ntamaras-general/releases/latest",
-  "notes": "Repeating no longer needs a spreadsheet: run a set number of times, until something shows up on screen, or until a step runs out of anywhere to go. Flows can now run themselves on a Windows Task Scheduler timer, and can tell a Zapier/Make/n8n webhook when they finish.",
+  "notes": "The recording window now jumps to the front and maximises itself the moment it opens, so it can no longer be mistaken for another window. Also: repeating no longer needs a spreadsheet, flows can run themselves on a Windows Task Scheduler timer, and can tell a Zapier/Make/n8n webhook when they finish.",
   "released": "2026-08-19",
-  "sha256": "2F5C6E5E83A5820E8D324C7E81F9CA82B1AA403032836BA1830FC2DB39B5E9ED",
+  "sha256": "C83AF48EAC7823187D8D2143A380EE1DF97F01635B5CB659B56C7CCCB327B21C",
   "minimum_os": "Windows 10"
 }
