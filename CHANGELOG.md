@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.3.0 — 19 August 2026
+
+**Recording now notices when something else steals your click.** A pop-up, a cookie
+banner, or an ad landing where you meant to click used to become a step like any other,
+indistinguishable until replay broke on it. Now that click is flagged the moment it
+happens — in the recording review and in the editor — with a plain reason why, and a
+one-tap way to remove it.
+
+**And you can ask to be asked, on a page you already know is trouble.** A new
+"Confirm each step before it's kept" option, off by default, pauses briefly after every
+real step with a Remove button, right there in the browser you're recording in. Say
+nothing and it's kept automatically after a few seconds — recording never stalls
+waiting on you, it only slows down when you want it to.
+
 ## 1.2.3 — 19 August 2026
 
 **The recording window now comes to you.** It used to be easy to miss which window was
