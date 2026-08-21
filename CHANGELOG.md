@@ -1,5 +1,28 @@
 # Changelog
 
+## 1.3.1 — 21 August 2026
+
+**The pop up warning now only fires on actual pop ups.** The check that flags a click as
+having landed on something that was not the page treated anything floating above the page
+as a pop up. A sticky header floats above the page too, and so does a navigation bar, so on
+an ordinary news site about a quarter of every link on the page came back flagged, the main
+menu included. A warning that cries wolf that often is worse than no warning at all. It now
+separates the two by when they turn up: whatever is already there once the page settles is
+furniture, and what arrives afterwards is a pop up. Cookie bars, newsletter boxes and full
+screen adverts are still caught, including the ones with no useful name to go on.
+
+**And it no longer mistakes itself for a pop up.** The recorder draws a small highlight
+around each control as you click it. That highlight sits above the page like an overlay
+does, so the recorder saw its own marker appear and flagged whatever you clicked next.
+Any two clicks less than about a second apart were affected, on any page.
+
+**Flows that run on their own can report again.** A flow pointed at a Zapier, Make or n8n
+address only sent its summary when it was started from the window. Anything started from
+the command line, which includes every scheduled run, finished without a word. Scheduled
+runs are the main reason to want the summary in the first place. They now send it, and wait
+long enough for it to arrive before the run closes down. The summary also carries a real
+finishing time rather than a zero.
+
 ## 1.3.0 — 19 August 2026
 
 **Recording now notices when something else steals your click.** A pop-up, a cookie

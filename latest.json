@@ -1,8 +1,8 @@
 {
-  "version": "1.3.0",
+  "version": "1.3.1",
   "url": "https://github.com/matthewkula/ntamaras-general/releases/latest",
-  "notes": "Recording now flags a click stolen by a pop-up or overlay, with a plain reason and a one-tap way to remove it. A new 'confirm each step' option, off by default, lets you review a step before it's kept on a page you know is noisy. The recording window also jumps to the front and maximises itself the moment it opens.",
-  "released": "2026-08-19",
-  "sha256": "9A62A5E462991EAA421A9559D8DADCE85966891171ED09318A3A5DC817EB86F0",
+  "notes": "Fixes the pop up warning added in 1.3.0. It was treating any sticky header or navigation bar as a pop up, so on an ordinary site about a quarter of the links on the page came back flagged, and the recorder was even flagging its own click marker. It now tells the two apart by when they appear. Scheduled flows can also send their finishing summary to Zapier, Make or n8n again, which never worked outside the app window.",
+  "released": "2026-08-21",
+  "sha256": "95A68A9A74413C3431AF0AB6539D5CA72DF3CB46CDA18D9270F5143456C93CC4",
   "minimum_os": "Windows 10"
 }
