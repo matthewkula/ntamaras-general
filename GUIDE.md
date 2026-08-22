@@ -46,7 +46,34 @@ profile. To remove the app completely, uninstall it and delete that folder.
 
 ---
 
-## 2. Your first automation, in five minutes
+## 2. Browser or desktop — the choice that matters most
+
+Ntamara's General watches two different worlds, and it cannot see into one from the
+other. Almost every failed first attempt is this choice going the wrong way.
+
+| Surface | Watches | Choose it for |
+|---|---|---|
+| **Browser** | the web page itself | anything in a website |
+| **Desktop** | Windows windows and controls | Notepad, Excel, an accounting package |
+| **Both** | both at once | a task that genuinely crosses over |
+
+**The trap.** A website open in your usual browser is *not* the browser surface. To the
+desktop surface an entire web page is a single nameless rectangle, so every click inside
+it is stored as a position rather than as *the Save button*. It will replay for a while
+and then break the first time the page shifts, and it cannot heal, because there is no
+name to search for.
+
+**Recording a browser task opens its own browser window.** That window, and only that
+window, is watched. It brings itself to the front and fills the screen. It starts signed
+out of everything because it keeps a separate profile from your normal browser — sign in
+once inside it and it remembers for every recording after.
+
+If you finish a recording and it captured nothing, this is almost always why: the work
+happened in a window that was not the one being watched.
+
+---
+
+## 3. Your first automation, in five minutes
 
 We will fill in a form five times without touching the keyboard. Nothing real is at
 risk — the app ships with its own practice form.
@@ -94,10 +121,38 @@ Everything below is refinement.
 
 ---
 
-## 3. Recording well
+## 4. Recording well
 
 The recording is the part that decides whether the automation is reliable, so it is worth
 a few habits.
+
+**Watch the label under your cursor.** While recording a browser task, whatever sits
+under the pointer is outlined and labelled with how it will be found again tomorrow. The
+colour is the honest answer, not a guess:
+
+| Colour | It says | What it means |
+|---|---|---|
+| Green | *Will find it by its test id, save-btn* | Durable. Survives a redesign |
+| Amber | *Will find it by the words Add to basket* | Fine until somebody rewords it |
+| Red | *Will find it by where it sits on the page* | Fragile. Nothing to grip |
+
+A red label is worth fixing while you are still recording. Look for a nearby named
+button, a labelled field, or a link with real text, and use that instead. Five seconds
+now saves an automation that quietly stops working next month.
+
+**Delete the housekeeping afterwards.** A recording keeps everything you did, including
+the parts that were not the task. In one real session, nineteen captured steps contained
+two worth keeping. On the review screen, remove:
+
+- clicks on your taskbar, and any click on Ntamara's General itself, which will steal
+  focus in the middle of a run
+- one time prompts such as *Got it*, *Accept*, or *Close*, which will not be there next
+  time and will fail the step
+- window focusing you did not intend
+
+Steps flagged with a warning landed on a pop up or an overlay rather than on the page
+underneath. They are marked, never removed for you, because sometimes clicking the thing
+on top is exactly what you meant.
 
 **Do the task properly, once.** Do not correct yourself mid-recording. If you fumble,
 stop, discard, and start again — it takes fifteen seconds and saves you editing later.
@@ -123,7 +178,7 @@ of a web page and paste it into an accounting program in a single flow.
 
 ---
 
-## 4. Making it use your data
+## 5. Making it use your data
 
 ### Variables
 
@@ -163,7 +218,7 @@ You can also shape a value: `{{first_name\|upper}}`, `{{phone\|digits}}`,
 
 ---
 
-## 5. Controlling the run
+## 6. Controlling the run
 
 ### How many times — the Loop & safety tab
 
@@ -216,7 +271,7 @@ Double-click a step and set **If this step fails**:
 
 ---
 
-## 6. When the target application changes
+## 7. When the target application changes
 
 This is where most automation tools break and need re-recording. This one tries three
 things before giving up.
@@ -243,7 +298,7 @@ Vision healing is off until you turn it on. Everything else works without a key.
 
 ---
 
-## 7. Settings
+## 8. Settings
 
 | Setting | Meaning |
 |---|---|
@@ -258,7 +313,7 @@ Vision healing is off until you turn it on. Everything else works without a key.
 
 ---
 
-## 8. Running without the window
+## 9. Running without the window
 
 Useful for scheduled work.
 
@@ -275,7 +330,7 @@ those arguments.
 
 ---
 
-## 9. When something goes wrong
+## 10. When something goes wrong
 
 **"Desktop engine" is red in the sidebar.** Desktop automation is Windows-only. Browser
 flows still work.
@@ -293,6 +348,23 @@ You can also add one by hand: **Add pause** on the Steps tab.
 2. **Look at what happened.** Open the run in **History** and click the screenshot on the
    failed step. Usually a login page or a cookie banner appeared unexpectedly.
 3. **Re-record**, if the task itself has changed rather than one control.
+
+**Nothing was recorded at all.** The work happened in a window that was not the one
+being watched. Recording a browser task opens its own browser window; your usual browser
+is not it. See section 2.
+
+**Every step says it was found by coordinates.** You recorded a web page on the desktop
+surface. Windows sees the whole page as one nameless rectangle. Re-record with the
+browser surface and the same clicks become real names.
+
+**It ran once when I asked for eight.** **Test** always runs exactly one pass, on
+purpose, so you can watch it before committing. Your repeat setting is untouched — use
+**Run** for the full number.
+
+**Windows warns me before it opens.** The download is not signed with a paid certificate
+yet, so Windows shows a blue *Windows protected your PC* box for it, as it does for any
+unsigned program. Choose **More info**, then **Run anyway**. Every release publishes a
+checksum if you would rather verify the file yourself.
 
 **I cannot tell what a step does.** Every step shows a picture of the control it touches,
 taken when you recorded it. If a step has no picture, it does not point at a control —
@@ -312,7 +384,7 @@ data. Every step using it follows.
 
 ---
 
-## 10. Habits worth having
+## 11. Habits worth having
 
 - **Dry run first** whenever the target has changed.
 - **Test on three rows** before pointing it at three thousand. Set Loop to a fixed count
@@ -325,7 +397,7 @@ data. Every step using it follows.
 
 ---
 
-## 11. What it will not do
+## 12. What it will not do
 
 - Record what you type into password or one-time-code fields.
 - Select-all-and-replace inside a document editor. It appends instead. Form fields are

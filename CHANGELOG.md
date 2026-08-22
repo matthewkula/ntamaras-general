@@ -1,5 +1,26 @@
 # Changelog
 
+## 1.4.0 — 22 August 2026
+
+**You can now see what the recorder is thinking.** Recording used to be invisible. You
+clicked things, the app wrote steps, and you found out what it had actually understood
+only when a run broke and you were reading a list you did not recognise. Now, while you
+record in a browser, whatever sits under your cursor is outlined and labelled with how it
+will be found again tomorrow: by its name, by its words, or, if there is nothing better
+left, by where it happens to sit on the page. That last one is marked in red, because it
+is the one that quietly stops working when the page changes, and it is much easier to fix
+while you are still recording than a month later.
+
+**A welcome that covers the three things that actually cost people their first attempt.**
+On first run the app now explains which surface it is watching, which window is the one
+being recorded, and that a recording keeps your housekeeping as well as your work. It
+appears once, and again after an update that changes how recording works.
+
+**A fuller guide, in the app and on the site.** The guide gained a section on choosing
+between the browser and the desktop, which is the single choice most first attempts get
+wrong, along with how to read the new labels, what to delete before saving, and plain
+answers for the things that look like faults and are not.
+
 ## 1.3.2 — 22 August 2026
 
 **The recording window comes to the front for real this time.** Version 1.2.3 said it made
