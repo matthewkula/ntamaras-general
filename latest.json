@@ -1,8 +1,8 @@
-﻿{
-    "version":  "1.4.0",
-    "url":  "https://github.com/matthewkula/ntamaras-general/releases/latest",
-    "notes":  "Repairs the recording window fix that shipped broken in 1.2.3. The packaged app was missing a Windows module it needed to raise its own window, and the failure was swallowed silently, so the recording window opened behind whatever you had in front and nothing was captured. It now comes to the front and maximises as intended, and says so in the run log if it ever cannot.",
-    "released":  "2026-08-22",
-    "sha256":  "F7B4D8184773602896840E283F11764485EDBA0261572E92A5C44BE95392E5D1",
-    "minimum_os":  "Windows 10"
+{
+  "version": "1.4.0",
+  "url": "https://github.com/matthewkula/ntamaras-general/releases/latest",
+  "notes": "Repairs the recording window fix that shipped broken in 1.2.3. The packaged app was missing a Windows module it needed to raise its own window, and the failure was swallowed silently, so the recording window opened behind whatever you had in front and nothing was captured. It now comes to the front and maximises as intended, and says so in the run log if it ever cannot.",
+  "released": "2026-08-22",
+  "sha256": "F7B4D8184773602896840E283F11764485EDBA0261572E92A5C44BE95392E5D1",
+  "minimum_os": "Windows 10"
 }
