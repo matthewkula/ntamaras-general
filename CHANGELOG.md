@@ -1,5 +1,22 @@
 # Changelog
 
+## 1.3.2 — 22 August 2026
+
+**The recording window comes to the front for real this time.** Version 1.2.3 said it made
+the recorder's own browser window jump to the front and maximise itself. In the version you
+actually download, that did nothing at all. The code that raises the window needs four
+Windows modules, and it loads them inside the function rather than at the top of the file,
+so the tool that packages the app never noticed one of them and left it out. The failure was
+caught and thrown away in silence, so the app looked fine, every test passed, and the
+feature had been dead in all three releases since.
+
+The result was the exact problem 1.2.3 was written to prevent. The recording window opened
+behind whatever you already had open, you carried on working in your normal browser, and
+nothing was recorded, with nothing on screen to tell you.
+
+The missing module is now packaged, and if raising the window ever fails again it says so
+in the run log instead of going quiet.
+
 ## 1.3.1 — 21 August 2026
 
 **The pop up warning now only fires on actual pop ups.** The check that flags a click as

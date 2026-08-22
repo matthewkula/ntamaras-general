@@ -1,8 +1,8 @@
 {
-  "version": "1.3.1",
+  "version": "1.3.2",
   "url": "https://github.com/matthewkula/ntamaras-general/releases/latest",
-  "notes": "Fixes the pop up warning added in 1.3.0. It was treating any sticky header or navigation bar as a pop up, so on an ordinary site about a quarter of the links on the page came back flagged, and the recorder was even flagging its own click marker. It now tells the two apart by when they appear. Scheduled flows can also send their finishing summary to Zapier, Make or n8n again, which never worked outside the app window.",
-  "released": "2026-08-21",
-  "sha256": "95A68A9A74413C3431AF0AB6539D5CA72DF3CB46CDA18D9270F5143456C93CC4",
+  "notes": "Repairs the recording window fix that shipped broken in 1.2.3. The packaged app was missing a Windows module it needed to raise its own window, and the failure was swallowed silently, so the recording window opened behind whatever you had in front and nothing was captured. It now comes to the front and maximises as intended, and says so in the run log if it ever cannot.",
+  "released": "2026-08-22",
+  "sha256": "AF770DFA62D2180D99F0EB3F303527BBA15C4F1EE6FA35EE221634065240F0B7",
   "minimum_os": "Windows 10"
 }
